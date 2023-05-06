@@ -9,49 +9,56 @@
     <link rel="stylesheet" href="./style/style.css" />
 </head>
 <body> <!-- class="fondo" (la saque porque se mezclaba con los textos, la idea es ponerlo en proximas entregas)-->
-    <header>
-        <nav>
-            <ul>
-                <li>
+    <header class="header-index">
+        <nav class="nav-index">
+            <ul class="ul-index">
+                <li class="li-index" >
                     <a href="./index.html">Inicio</a>
                 </li>
-                <li>
+                <li class="li-index">
                     <a href="./pages/servicios.html">Servicios</a>
                 </li>
-                <li>
+                <li class="li-index">
                     <a href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="cpadre">
-        <section class="titulo chijo">
-            <img id="logoIndex" src="./assets/images/logoBlanco.jpg" alt="Logo01" width="50" height="50" />
+    <main class="main-index">
+        <section class="self">
+            <img src="./assets/images/logoBlanco.jpg" alt="Logo01" width="100px" height="100px" /><!--  id="logoIndex"  -->
             <h1>LEIVA REAL</h1>
             <h2>Estudio Jurídico</h2>
         </section>
         <hr />  
-         <section class="flexbox-index chijo"> <!-- class="sectionIndex" -->
-            <article class="box-index">
-                 <h3>Quienes Somos</h3>            
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem cum, adipisci dolore repellat neque consequuntur, assumenda eligendi soluta blanditiis voluptas repellendus maxime iusto vitae perferendis illo. Esse mollitia ea porro!</p>
+        <section class="section-index"> <!-- class="sectionIndex" flexbox-index chijo-->
+            <article class="article-index-qs"><!-- class="box-index" -->
+                <h3 class="h3">Quienes Somos</h3>            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor voluptates quaerat rerum nemo voluptate possimus temporibus excepturi in? Ex quos voluptas omnis aliquid, inventore perferendis voluptatem consectetur fuga consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nesciunt impedit neque voluptatum, ducimus dolor sapiente quo quae hic dicta, non quia magni veniam nostrum eius itaque. Autem, et unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem cum, adipisci dolore repellat neque consequuntur, assumenda eligendi soluta blanditiis voluptas repellendus maxime iusto vitae perferendis illo. Esse mollitia ea porro!</p>
                 <h4>
                     <a href="./pages/servicios.html">Saber más</a>
                 </h4>
                 <h4>
                     <a href="./pages/contacto.html">Contacto</a>
                 </h4>
-            </article>
-            <article class="box-index">
-                <h3>Nuestro Equipo</h3>
-                <div>
-                    <img class="imagenIndex" src="./assets/images/FotoAbogado1.jpg" alt="Abogado" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ab dolore sint quis totam. Nihil, beatae. Est, quidem ratione maxime vel maiores dolores praesentium excepturi velit obcaecati eveniet id sequi?</p>
-                </div>
-                <div>
-                    <img class="imagenIndex" src="./assets/images/FotoAbogada1.jpg" alt="Abogada" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione consequatur laboriosam ducimus tenetur dolorem saepe laudantium perspiciatis error, dolorum iusto nam cumque ut fugiat modi delectus, dolor magni iste?</p>
-                </div>
+            </article>                
+            <h3 class="h3">Nuestro Equipo</h3>
+
+            <article class="hero"> 
+                <div class="hero-container">
+                    <img class="hero-container-img" src="./assets/images/FotoAbogado1.jpg" alt="Abogado" />
+                    <div class="hero-container-info">
+                        <h1>Dr. Leiva Andrés Mariano</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ab dolore sint quis totam. Nihil, beatae. Est, quidem ratione maxime vel maiores dolores praesentium excepturi velit obcaecati eveniet id sequi?</p>
+                        <h2>Socio Fundador</h2>
+                    </div>
+                    <img class="hero-container-img" src="./assets/images/FotoAbogada1.jpg" alt="Abogada" />
+                    <div class="hero-container-info">
+                        <h1>Dra. Real Lahoz Malena</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione consequatur laboriosam ducimus tenetur dolorem saepe laudantium perspiciatis error, dolorum iusto nam cumque ut fugiat modi delectus, dolor magni iste?</p>
+                        <h2>Socia Fundadora</h2>
+                    </div>    
+                </div>                
             </article>
         </section>
     </main>
