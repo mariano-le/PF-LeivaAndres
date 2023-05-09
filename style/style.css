@@ -359,7 +359,6 @@ p::first-letter {
 p::selection {
     color: black;
     background-color: #cda84f;
-
 }
 /* HEADER - NAV - GENERAL */
 /* MOBILE */
@@ -367,6 +366,7 @@ p::selection {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 /* Logo */
 #nav__mobile-logo {
@@ -377,20 +377,20 @@ p::selection {
     border-radius: 100px;
 }
 /* Titulo Index */
-.nav-bar_mobile div h1 {
+.nav__mobile div h1 {
     color: black;
     font-size: 20px;
     font-family: "Montaga"; 
     text-align: center;
 }
-.nav-bar_mobile div h2 {
+.nav__mobile div h2 {
     color: #cda84f;
     font-size: 15px; 
     font-family: "LatoRegular";
     text-align: center;
 }
 /* Titulo Pages */
-.nav-bar_mobile h1 {
+.nav__mobile h1 {
     color: black;
     font-size: 20px;
     font-family: "Montaga"; 
@@ -445,6 +445,9 @@ p::selection {
     color: black;
     font-weight: bold;
 }
+hr {
+    margin: 10px 0;
+}
 /* MAIN - INDEX */
 .index-main {
     display: grid;
@@ -465,7 +468,10 @@ p::selection {
     width: 140px;
     height: 140px;
     margin: 0 20px;
-    grid-area: img;    
+    border:3px solid #cda84f;
+    border-radius: 100px;
+    grid-area: img;
+
 }
 .index-main__encabezado h1 {
     color: black;
@@ -683,6 +689,25 @@ p::selection {
     font-weight: bold;
     text-align: center;
 }
+/* Columna_01 */
+.contacto__formulario {
+    font-size: 14px;
+    font-family: "LatoRegular";
+}
+.contacto__formulario label {
+    font-weight: bold;
+}
+.contacto__formulario input {
+    background-color: #cda84f;
+    border: 3px solid black;
+    font-weight: lighter;
+}
+.contacto__formulario button {
+    background-color: #cda84f;
+    border: 3px solid black;
+    font-weight: bold;
+    margin: 5px;
+}
 /* Columna_02 */
 .contacto__section-02 {
     display: flex;
@@ -756,7 +781,16 @@ p::selection {
     height: auto;
     margin-top: 20px;
 }
-
+/* FOOTER  */
+.parrafo-footer {
+    color: black;
+    font-size: 11px;
+    font-family: "LatoRegular";
+    font-weight: lighter;
+    font-style: italic;
+    text-align: left;
+    padding-top: 60px;
+}
 /* MEDIA QUERY */
 @media (min-width: 576px) {
     /* NAV MOBILE */
@@ -773,7 +807,7 @@ p::selection {
         font-size: 25PX;
     }
     /* Titulo nav mobile pages */
-    .nav-bar_mobile h1 {
+    .nav__mobile h1 {
         font-size: 30px;
     }
     /* MAIN INDEX */
@@ -866,15 +900,4 @@ p::selection {
     .servicios-section {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-/* FOOTER  */
-.parrafo-footer {
-    color: black;
-    font-size: 11px;
-    font-family: "LatoRegular";
-    font-weight: lighter;
-    font-style: italic;
-    text-align: left;
-    padding-top: 60px;
 }
