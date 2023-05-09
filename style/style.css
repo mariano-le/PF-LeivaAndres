@@ -402,19 +402,15 @@ p::selection {
     height: 50px;    
 }
 /* DESKTOP */
-.nav {
-    padding: 20px;
-}
 .nav__desktop {
     display: none;
     background-color: black;
     border: 3px solid  #cda84f;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);    
-    flex-flow: row wrap;
     max-width: 1200px;
     height: 60px;
-    margin: 10px auto;
+    margin: 30px auto;
     justify-content: space-around;
     align-items: center;
 }
@@ -607,9 +603,31 @@ p::selection {
     border-radius: 100px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 .pages-main__encabezado h1 {
+    color: black;
+    font-size: 30px;
+    font-family: "Montaga"; 
+    text-align: center;
+    margin: 10px;
+}
+/* Título Contacto */
+#titulo-contacto {
+    display: none;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+#titulo-contacto img {
+    border: solid 2px black;
+    border-radius: 100px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+#titulo-contacto h1 {
     color: black;
     font-size: 30px;
     font-family: "Montaga"; 
@@ -651,10 +669,95 @@ p::selection {
     font-family: "LatoRegular"; 
     text-align: justify;
 }
-/* MEDIA QUERY */
-@media (max-width: 600px) {
-
+/* MAIN - CONTACTO */
+/* Subtítulos */
+.contacto__subtitulos {
+    background-color: black;
+    border: 3px solid #cda84f;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    color: #cda84f;
+    font-size: 24px;
+    font-family: "Montaga";
+    padding: 10px 0px;
+    font-weight: bold;
+    text-align: center;
 }
+/* Columna_02 */
+.contacto__section-02 {
+    display: flex;
+    justify-content: start;
+}
+.contacto__section-02 img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 100px;
+}
+.contacto__section-02 div {
+    background-color: #cda84f;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    color: black;
+    text-align: start;
+}
+.contacto__section-02 div h1 {
+    font-size: 30px;
+    font-family: "LatoRegular";
+    font-weight: bold;
+}
+.contacto__section-02 div p {
+    padding-top: 10px;
+    padding-left: 10px;
+    line-height: 1;
+    font-size: 14px;
+    font-family: "LatoRegular";
+    font-weight: bold;
+}
+.contacto__section-02 div p::first-letter {
+    font-size: large;
+}
+.contacto__section-02 div p span {
+    font-size: 18px;
+}
+/* Columna_03 */
+.contacto__section-03 {
+    display: flex;
+    justify-content: start;
+}
+.contacto__section-03 img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 100px;
+}
+.contacto__section-03 p {
+    background-color: #cda84f;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    color: black;
+    font-size: 14px;
+    font-family: "LatoRegular";
+    font-weight: bold;
+}
+.contacto__section-03 p::first-letter {
+    font-size: large;
+}
+.iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* MEDIA QUERY */
 @media (min-width: 576px) {
     /* NAV MOBILE */
     /* Logo nav mobile */
@@ -732,7 +835,13 @@ p::selection {
     .pages-main__encabezado {
         display: grid;
     }
+    #titulo-contacto {
+        display: flex;
+    }
     .pages-main__encabezado h1 {
+        font-size: 40px;
+    }
+    #titulo-contacto h1 {
         font-size: 40px;
     }
 }
@@ -742,17 +851,21 @@ p::selection {
     .pages-main__encabezado h1 {
         font-size: 60px;
     }
+    #titulo-contacto h1 {
+        font-size: 60px;
+    }
     .pages-main__encabezado img {
         width: 150px;
         height: 150px;
+    }
+    #titulo-contacto img {
+        width: 150px;
+        height: auto;
     }
     /* MAIN SERVICIOS */
     .servicios-section {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-@media (min-width: 1200px) {
-
 }
 
 /* FOOTER  */
