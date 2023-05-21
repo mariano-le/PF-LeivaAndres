@@ -100,7 +100,7 @@ p::selection {
     padding: 2px 30px;
 }
 .nav__desktop-item a:hover {
-    content: '\27B3';
+    /* content: '\27B3'; */
     color: black;
     font-weight: bold;
 }
@@ -140,7 +140,7 @@ hr {
     height: 140px;
     margin: 0 20px;
     border:3px solid #cda84f;
-    border-radius: 100px;
+    border-radius: 50%;
     grid-area: img;
 
 }
