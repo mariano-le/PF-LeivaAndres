@@ -1,0 +1,39 @@
+@import '../utils/variables';
+// FOOTER 
+.footer {
+    @extend .container;    
+    color: $colorBlack;
+    margin-top: 20px;
+
+    &__social {
+        text-align: center;
+
+        $socialIcons: (
+            facebook: #3b5998,
+            whatsapp: #25D366,
+            instagram: #c92d8f,
+            linkedin: #0e76a8,
+        );
+
+        @each $socialName, $socialColor in $socialIcons {
+            .#{$socialName} {
+                color: $colorBlack;
+                font-size: 30px;
+                margin: 10px;
+
+                &:hover {
+                    color: $socialColor;
+                }
+            }
+        }
+    }
+    &__copy {
+        font-size: 14px;
+        font-family: "LatoRegular";
+        font-weight: lighter;
+        font-style: italic;
+        text-align: left;
+        margin: 20px 0;
+        text-align: center;
+    }
+}

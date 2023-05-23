@@ -1,0 +1,14 @@
+{
+  "name": "preentrega-leivaandres",
+  "version": "1.0.0",
+  "description": "Segunda pre-entrega para curso de Desarrollo Web.",
+  "main": "index.js",
+  "scripts": {
+    "buil-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "Andrés Mariano Leiva",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

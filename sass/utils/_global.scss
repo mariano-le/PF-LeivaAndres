@@ -1,0 +1,67 @@
+@import '../utils/variables';
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Montaga;
+    src: url(../assets/fonts/Montaga-Regular.ttf) format("truetype");
+    font-weight: normal
+}
+@font-face {
+    font-family: LatoRegular;
+    src: url(../assets/fonts/Lato-Regular.ttf) format("truetype");
+    font-weight: normal
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.5;
+}
+p::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+p::selection {
+    color: $colorBlack;
+    background-color: $colorGold;
+}
+// Extend
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.icons {
+    font-size: 40px;
+    margin: 5px;
+    color: $colorBlack;
+}
+// Mixin
+@mixin templateGrid ($colMobile, $bpMed, $colDesktopSmall, $bpLrg, $colDesktopMedium) {
+    display: grid;
+    grid-template-columns: repeat($colMobile, 1fr);
+    gap: 20px;
+
+    @media (min-width: $bpMed) {
+        grid-template-columns: repeat($colDesktopSmall, 1fr);
+    }
+    @media (min-width: $bpLrg) {
+        grid-template-columns: repeat($colDesktopMedium, 1fr);
+    }
+}
+@mixin templateFlex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    padding: 20px;
+
+    @if ($align == true) {
+        align-items: center;
+    }
+}

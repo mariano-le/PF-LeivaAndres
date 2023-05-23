@@ -1,0 +1,153 @@
+@import '../utils/variables';
+// MAIN - CONTACTO
+// Encabezado
+#titulo-contacto {
+    display: none;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        border: solid 2px $colorBlack;
+        border-radius: 100px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+        width: 100px;
+        height: auto;
+        margin: 20px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    h1 {
+        color: $colorBlack;
+        font-size: 30px;
+        font-family: "Montaga"; 
+        text-align: center;
+        margin: 10px;
+    }
+}
+// Subtítulos
+.contacto__subtitulos {
+    background-color: $colorBlack;
+    border: 3px solid $colorGold;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    color: $colorGold;
+    font-size: 24px;
+    font-family: "Montaga";
+    padding: 10px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+// Columna_01 
+.contacto__formulario {
+    font-size: 14px;
+    font-family: "LatoRegular";
+
+    label {
+        font-weight: bold;
+    }
+    input {
+        background-color: $colorGold;
+        border: 3px solid $colorBlack;
+        font-weight: lighter;
+    }
+    button {
+        background-color: $colorGold;
+        border: 3px solid $colorBlack;
+        font-weight: bold;
+        margin: 5px;
+    }
+}
+/* Columna_02 */
+.contacto__section-02 {
+    display: flex;
+    justify-content: start;
+
+    span {
+        @extend .icons;
+    }
+    div {
+        background-color: $colorGold;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        border: 3px solid $colorBlack;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+        color: black;
+        text-align: start;
+
+        h1 {
+            font-size: 30px;
+            font-family: "LatoRegular";
+            font-weight: bold;
+        }
+        p {
+            padding-top: 10px;
+            padding-left: 10px;
+            line-height: 1;
+            font-size: 14px;
+            font-family: "LatoRegular";
+            font-weight: bold;
+
+            span {
+                font-size: 18px;
+            }
+            &::first-letter {
+                font-size: large;
+            }
+        }
+    }
+}
+/* Columna_03 */
+.contacto__section-03 {
+    display: flex;
+    justify-content: start;
+
+    span {
+        @extend .icons;
+    }
+    p {
+        background-color: $colorGold;
+        width: 100%;
+        margin: 10px;
+        padding: 5px;
+        border: 3px solid $colorBlack;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+        color: $colorBlack;
+        font-size: 14px;
+        font-family: "LatoRegular";
+        font-weight: bold;
+    }
+    &::first-letter {
+        font-size: large;
+    }    
+}
+.iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+/* MEDIA QUERY */
+@media (min-width: $bpMedium) {
+    // MAIN CONTACTO
+    #titulo-contacto {
+        display: flex;
+    }
+    #titulo-contacto h1 {
+        font-size: 40px;
+    }
+}
+@media (min-width: $bpLarge) {
+    // MAIN CONTACTO
+    #titulo-contacto h1 {
+        font-size: 60px;
+    }
+    #titulo-contacto img {
+        width: 150px;
+        height: auto;
+    }
+}

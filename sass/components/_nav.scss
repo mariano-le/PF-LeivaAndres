@@ -1,0 +1,114 @@
+@import '../utils/variables';
+// NAV 
+// MOBILE
+.nav__mobile {
+    @include templateFlex(row, space-between, true);
+    // Logo
+    #nav__mobile-logo {
+        width: 75px;
+        height: auto;
+        object-fit: cover;
+        border: 2px solid $colorBlack;
+        border-radius: 100px;
+    }
+    // Título index
+    div h1 {
+        color: $colorBlack;
+        font-size: 20px;
+        font-family: "Montaga";
+        text-align: center;        
+    }
+    div h2 {
+        color: $colorGold;
+        font-size: 15px; 
+        font-family: "LatoRegular";
+        text-align: center;
+    }
+    // Título pages
+    h1 {
+        color: $colorBlack;
+        font-size: 20px;
+        font-family: "Montaga"; 
+        text-align: center;
+    }
+    // Menú
+    #nav__mobile-menu {
+        width: auto;
+        height: 50px;    
+    }    
+}
+// DESKTOP 
+.nav__desktop {
+    display: none;
+    background-image: linear-gradient(to bottom, #1c1810, #020202);
+    border: 3px solid  $colorGold;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    max-width: 1200px;
+    height: 60px;
+    margin: 30px auto;
+    justify-content: space-around;
+    align-items: center;
+    
+    &-item a {
+        color: $colorGold;
+        font-family: "LatoRegular";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-item:hover {
+        background-color: $colorGold;
+        border-radius: 10px;
+        padding: 2px 30px;
+    }
+    &-item a:hover {
+        color: $colorBlack;
+        font-weight: bold;
+    }
+    &-item a:hover::before {
+        margin: 5px;
+        color: $colorBlack;
+    }
+    &-item:active {
+        background-color: white;
+        border: 3px solid $colorGold;
+        border-radius: 10px;
+        color: $colorBlack;
+        font-weight: bold;
+    }
+}
+hr {
+    margin: 10px 0;
+}
+// MEDIA QUERY
+@media (min-width: $bpSmall) {
+    //  NAV MOBILE 
+    //  Logo nav mobile 
+    #nav__mobile-logo {
+        width: 100px;
+        height: auto;
+    }
+    //  Titulo nav mobile index 
+    .nav__mobile div h1 {
+        font-size: 30px;
+    }
+    .nav__mobile div h2 {
+        font-size: 25PX;
+    }
+    //  Titulo nav mobile pages 
+    .nav__mobile h1 {
+        font-size: 30px;
+    }
+}
+@media (min-width: $bpMedium) {
+    //  NAV MOBILE 
+    .nav__mobile {
+        display: none;
+    }
+    //  NAV DESKTOP 
+    .nav__desktop {
+        display: flex;
+    }
+}

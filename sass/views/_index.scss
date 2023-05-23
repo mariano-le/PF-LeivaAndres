@@ -1,0 +1,184 @@
+@import '../utils/variables';
+// MAIN - INDEX
+.index-main {
+    @extend .container;
+    display: grid;    
+
+    &__encabezado {
+        align-items: center;
+        justify-self: center;
+        display: none;
+        grid-template-areas:
+            'img h1'
+            'img h2';
+
+        img {
+            width: 140px;
+            height: 140px;
+            margin: 0 20px;
+            border:3px solid $colorGold;
+            border-radius: 50%;
+            grid-area: img;
+        }
+        h1 {
+            color: $colorBlack;
+            font-size: 60px;
+            font-family: "Montaga";
+            text-align: center;
+            margin: 10px;
+            grid-area: h1;
+        }
+        h2 {
+            color: $colorGold;
+            font-size: 30px;
+            font-family: "LatoRegular";
+            text-align: center;
+            margin: 10px;
+            grid-area: h2;
+        }
+    }
+    &__titulos {
+        // background-color: $colorBlack;
+        background-image: linear-gradient(to bottom, #1c1810, #020202);
+        border: 3px solid  $colorGold;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+        color: $colorGold;
+        font-size: 30px; 
+        font-family: "Montaga";
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+    &__texto {
+        margin: 20px auto;
+        padding: 0px 20px;
+        color: $colorGold;
+        font-size: 15px;
+        font-family: "LatoRegular"; 
+        text-align: justify;
+    }
+    &__enlace {
+        display: block;
+        background-color: $colorBlack;
+        border: 3px solid  $colorGold;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);   
+        color: $colorGold;
+        font-size: 12px;
+        font-family: "Montaga";
+        font-weight: bold;
+        text-align: center;
+        width: 50%;
+        margin: 10px auto;
+        padding: 5px;
+
+        &:hover {
+            background-color: $colorGold;
+            color: $colorBlack;
+            border: 3px solid $colorBlack;
+        }        
+    }
+    &__tarjetas {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+        align-items: center;
+        
+        &-img {
+            width: 75%;
+            height: auto;
+            margin: 20px auto;
+            border: 3px solid  $colorGold;
+            border-radius: 10px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            object-fit: cover;            
+        }
+        &-info {
+            width: 75%;
+            margin: 0 auto;
+
+            h1 {
+                background-image: radial-gradient(#cda84f, #856d37);
+                display: block;
+                width: auto;
+                margin-bottom: 10px;
+                padding: 5px;
+                border: 3px solid $colorBlack;
+                border-radius: 10px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+                color: $colorBlack;
+                font-size: 15px;
+                font-family: "LatoRegular";
+                text-align: center;
+            }
+            p {
+                margin-bottom: 10px;
+                color: $colorBlack;
+                font-size: 12px;
+                font-family: "LatoRegular"; 
+                text-align: justify;
+            }
+            h2 {
+                background-color: $colorBlack;
+                background-image: radial-gradient(#020202, #2f2718);
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 5px;
+                border: 3px solid $colorGold;
+                border-radius: 10px;
+                color: $colorGold;
+                font-size: 12px;
+                font-family: "Montaga";
+                font-weight: bold;
+                text-align: center;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            }            
+        }
+    }
+}
+// MEDIA QUERY
+@media (min-width: $bpSmall) {
+    // MAIN INDEX
+    .index-main__texto {
+        font-size: 20px;
+    }
+}
+@media (min-width: $bpMedium) {
+    //  MAIN INDEX
+    //  Título
+    .index-main__encabezado {
+        display: grid;
+    }
+    //  Sección-01 
+    .index-main__titulos {
+        font-size: 40px;
+        width: 75%;
+    }
+    .index-main__texto {
+        font-size: 25px;
+    }
+    .index-main__enlace {
+        font-size: 20px;
+    }
+    //  Sección-02 
+    .index-main__tarjetas {
+        grid-template-columns: 0.5fr 1fr
+    }
+    .index-main__tarjetas-info h1 {
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    .index-main__tarjetas-info p {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .index-main__tarjetas-info h2 {
+        width: 50%;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+}
