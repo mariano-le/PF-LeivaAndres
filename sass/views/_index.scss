@@ -13,10 +13,10 @@
             'img h2';
 
         img {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             margin: 0 20px;
-            border:3px solid $colorGold;
+            border:4px solid $colorGold;
             border-radius: 50%;
             grid-area: img;
         }
@@ -100,7 +100,7 @@
             width: 75%;
             margin: 0 auto;
 
-            h1 {
+            h5 {
                 background-image: radial-gradient(#cda84f, #856d37);
                 display: block;
                 width: auto;
@@ -110,7 +110,7 @@
                 border-radius: 10px;
                 box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
                 color: $colorBlack;
-                font-size: 15px;
+                font-size: 20px;
                 font-family: "LatoRegular";
                 text-align: center;
             }
@@ -121,7 +121,7 @@
                 font-family: "LatoRegular"; 
                 text-align: justify;
             }
-            h2 {
+            h6 {
                 background-color: $colorBlack;
                 background-image: radial-gradient(#020202, #2f2718);
                 display: block;
@@ -168,7 +168,7 @@
     .index-main__tarjetas {
         grid-template-columns: 0.5fr 1fr
     }
-    .index-main__tarjetas-info h1 {
+    .index-main__tarjetas-info h5 {
         margin-bottom: 25px;
         font-size: 30px;
     }
@@ -176,7 +176,7 @@
         margin-bottom: 25px;
         font-size: 20px;
     }
-    .index-main__tarjetas-info h2 {
+    .index-main__tarjetas-info h6 {
         width: 50%;
         margin-bottom: 25px;
         font-size: 20px;

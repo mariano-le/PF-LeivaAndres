@@ -62,19 +62,19 @@ p::selection {
   border: 2px solid #020202;
   border-radius: 100px;
 }
-.nav__mobile div h1 {
+.nav__mobile div h2 {
   color: #020202;
   font-size: 20px;
   font-family: "Montaga";
   text-align: center;
 }
-.nav__mobile div h2 {
+.nav__mobile div h3 {
   color: #cda84f;
   font-size: 15px;
   font-family: "LatoRegular";
   text-align: center;
 }
-.nav__mobile h1 {
+.nav__mobile h2 {
   color: #020202;
   font-size: 20px;
   font-family: "Montaga";
@@ -135,13 +135,13 @@ hr {
     width: 100px;
     height: auto;
   }
-  .nav__mobile div h1 {
+  .nav__mobile div h2 {
     font-size: 30px;
   }
-  .nav__mobile div h2 {
+  .nav__mobile div h3 {
     font-size: 25PX;
   }
-  .nav__mobile h1 {
+  .nav__mobile h2 {
     font-size: 30px;
   }
 }
@@ -212,10 +212,10 @@ hr {
   grid-template-areas: "img h1" "img h2";
 }
 .index-main__encabezado img {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   margin: 0 20px;
-  border: 3px solid #cda84f;
+  border: 4px solid #cda84f;
   border-radius: 50%;
   grid-area: img;
 }
@@ -296,7 +296,7 @@ hr {
   width: 75%;
   margin: 0 auto;
 }
-.index-main__tarjetas-info h1 {
+.index-main__tarjetas-info h5 {
   background-image: radial-gradient(#cda84f, #856d37);
   display: block;
   width: auto;
@@ -306,7 +306,7 @@ hr {
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   color: #020202;
-  font-size: 15px;
+  font-size: 20px;
   font-family: "LatoRegular";
   text-align: center;
 }
@@ -317,7 +317,7 @@ hr {
   font-family: "LatoRegular";
   text-align: justify;
 }
-.index-main__tarjetas-info h2 {
+.index-main__tarjetas-info h6 {
   background-color: #020202;
   background-image: radial-gradient(#020202, #2f2718);
   display: block;
@@ -356,7 +356,7 @@ hr {
   .index-main__tarjetas {
     grid-template-columns: 0.5fr 1fr;
   }
-  .index-main__tarjetas-info h1 {
+  .index-main__tarjetas-info h5 {
     margin-bottom: 25px;
     font-size: 30px;
   }
@@ -364,7 +364,7 @@ hr {
     margin-bottom: 25px;
     font-size: 20px;
   }
-  .index-main__tarjetas-info h2 {
+  .index-main__tarjetas-info h6 {
     width: 50%;
     margin-bottom: 25px;
     font-size: 20px;
@@ -383,11 +383,12 @@ hr {
   padding: 20px;
 }
 .pages-main__encabezado img {
-  border: solid 2px #020202;
-  border-radius: 100px;
+  border: solid 4px #cda84f;
+  border-radius: 50%;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   width: 100px;
   height: auto;
+  transition: transform 0.5s;
 }
 .pages-main__encabezado img:hover {
   transform: scale(1.2);
@@ -423,9 +424,12 @@ hr {
   border: 3px solid #cda84f;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
 }
 .pages-main .servicios-section__card:hover {
   transform: translateY(-10px);
+  background-color: #6e5b2f;
+  border: 5px solid #433720;
 }
 .pages-main .servicios-section__card-titulo {
   background-color: #020202;
@@ -482,12 +486,13 @@ hr {
   align-items: center;
 }
 #titulo-contacto img {
-  border: solid 2px #020202;
+  border: 4px solid #cda84f;
   border-radius: 100px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   width: 100px;
   height: auto;
   margin: 20px;
+  transition: transform 0.5s;
 }
 #titulo-contacto img:hover {
   transform: scale(1.2);

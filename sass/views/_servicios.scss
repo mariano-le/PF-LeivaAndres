@@ -14,11 +14,12 @@
         padding: 20px;
 
         img {
-            border: solid 2px $colorBlack;
-            border-radius: 100px;
+            border: solid 4px $colorGold;
+            border-radius: 50%;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
             width: 100px;
             height: auto;
+            transition: transform 0.5s;
 
             &:hover {
                 transform: scale(1.2);
@@ -44,9 +45,12 @@
             border:3px solid $colorGold;
             border-radius: 10px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            transition: all 0.5s;
 
             &:hover {
                 transform: translateY(-10px);
+                background-color: #6e5b2f;
+                border:5px solid #433720;
             }
 
             &-titulo {

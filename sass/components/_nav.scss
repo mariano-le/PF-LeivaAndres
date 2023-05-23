@@ -12,20 +12,20 @@
         border-radius: 100px;
     }
     // Título index
-    div h1 {
+    div h2 {
         color: $colorBlack;
         font-size: 20px;
         font-family: "Montaga";
         text-align: center;        
     }
-    div h2 {
+    div h3 {
         color: $colorGold;
         font-size: 15px; 
         font-family: "LatoRegular";
         text-align: center;
     }
     // Título pages
-    h1 {
+    h2 {
         color: $colorBlack;
         font-size: 20px;
         font-family: "Montaga"; 
@@ -91,14 +91,14 @@ hr {
         height: auto;
     }
     //  Titulo nav mobile index 
-    .nav__mobile div h1 {
+    .nav__mobile div h2 {
         font-size: 30px;
     }
-    .nav__mobile div h2 {
+    .nav__mobile div h3 {
         font-size: 25PX;
     }
     //  Titulo nav mobile pages 
-    .nav__mobile h1 {
+    .nav__mobile h2 {
         font-size: 30px;
     }
 }
