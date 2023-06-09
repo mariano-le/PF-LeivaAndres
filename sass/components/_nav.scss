@@ -34,9 +34,34 @@
         text-align: center;
     }
     // Menú
-    #nav__mobile-menu {
-        width: auto;
-        height: 50px;    
+    .nav__mobile-menu {
+        i {
+            font-size: 50px;
+            color: $colorBlack;
+        } 
+        ul {
+            position: absolute;
+            left: 0;
+            top: 130px;
+            background-color: white;
+            width: 100%;
+            display: none;
+            
+            li {
+                padding: 10px;
+                border-bottom: solid 3px $colorGold;
+
+                a {
+                    color: $colorBlack;
+                    font-family: "LatoRegular";
+                    font-size: 20px;
+                    font-weight: bold;                    
+                }
+            }
+        }
+        &:hover ul {
+            display: block;
+        }   
     }    
 }
 // DESKTOP 

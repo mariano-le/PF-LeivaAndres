@@ -80,9 +80,30 @@ p::selection {
   font-family: "Montaga";
   text-align: center;
 }
-.nav__mobile #nav__mobile-menu {
-  width: auto;
-  height: 50px;
+.nav__mobile .nav__mobile-menu i {
+  font-size: 50px;
+  color: #020202;
+}
+.nav__mobile .nav__mobile-menu ul {
+  position: absolute;
+  left: 0;
+  top: 130px;
+  background-color: white;
+  width: 100%;
+  display: none;
+}
+.nav__mobile .nav__mobile-menu ul li {
+  padding: 10px;
+  border-bottom: solid 3px #cda84f;
+}
+.nav__mobile .nav__mobile-menu ul li a {
+  color: #020202;
+  font-family: "LatoRegular";
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav__mobile .nav__mobile-menu:hover ul {
+  display: block;
 }
 
 .nav__desktop {
