@@ -38,7 +38,6 @@
         }
     }
     &__titulos {
-        // background-color: $colorBlack;
         background-image: linear-gradient(to bottom, #1c1810, #020202);
         border: 3px solid  $colorGold;
         border-radius: 10px;
@@ -166,19 +165,22 @@
     }
     //  Sección-02 
     .index-main__tarjetas {
-        grid-template-columns: 0.5fr 1fr
-    }
-    .index-main__tarjetas-info h5 {
-        margin-bottom: 25px;
-        font-size: 30px;
-    }
-    .index-main__tarjetas-info p {
-        margin-bottom: 25px;
-        font-size: 20px;
-    }
-    .index-main__tarjetas-info h6 {
-        width: 50%;
-        margin-bottom: 25px;
-        font-size: 20px;
+        grid-template-columns: 0.5fr 1fr;
+
+        &-info {
+            h5 {
+                margin-bottom: 25px;
+                font-size: 30px;
+            }
+            p {
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            h6 {
+                width: 50%;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+        }
     }
 }

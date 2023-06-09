@@ -12,17 +12,19 @@
         border-radius: 100px;
     }
     // Título index
-    div h2 {
-        color: $colorBlack;
-        font-size: 20px;
-        font-family: "Montaga";
-        text-align: center;        
-    }
-    div h3 {
-        color: $colorGold;
-        font-size: 15px; 
-        font-family: "LatoRegular";
-        text-align: center;
+    div {
+        h2 {
+            color: $colorBlack;
+            font-size: 20px;
+            font-family: "Montaga";
+            text-align: center;
+        }        
+        h3 {
+            color: $colorGold;
+            font-size: 15px;
+            font-family: "LatoRegular";
+            text-align: center;
+        }
     }
     // Título pages
     h2 {
@@ -50,33 +52,37 @@
     justify-content: space-around;
     align-items: center;
     
-    &-item a {
-        color: $colorGold;
-        font-family: "LatoRegular";
-        font-size: 30px;
-        font-style: normal;
-        font-weight: bold;
-        text-align: center;
-    }
-    &-item:hover {
-        background-color: $colorGold;
-        border-radius: 10px;
-        padding: 2px 30px;
-    }
-    &-item a:hover {
-        color: $colorBlack;
-        font-weight: bold;
-    }
-    &-item a:hover::before {
-        margin: 5px;
-        color: $colorBlack;
-    }
-    &-item:active {
-        background-color: white;
-        border: 3px solid $colorGold;
-        border-radius: 10px;
-        color: $colorBlack;
-        font-weight: bold;
+    &-item {
+        &:hover {
+            background-color: $colorGold;
+            border-radius: 10px;
+            padding: 2px 30px;
+        }
+        &:active {
+            background-color: white;
+            border: 3px solid $colorGold;
+            border-radius: 10px;
+            color: $colorBlack;
+            font-weight: bold;
+        }        
+        a {
+            color: $colorGold;
+            font-family: "LatoRegular";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+
+            &:hover {
+                color: $colorBlack;
+                font-weight: bold; 
+
+                &::before {
+                    margin: 5px;
+                    color: $colorBlack;
+                }
+            }          
+        }
     }
 }
 hr {
@@ -91,15 +97,25 @@ hr {
         height: auto;
     }
     //  Titulo nav mobile index 
-    .nav__mobile div h2 {
-        font-size: 30px;
+    .nav__mobile {
+        div {
+            h2 {
+                font-size: 30px;
+            }
+        }      
     }
-    .nav__mobile div h3 {
-        font-size: 25PX;
+    .nav__mobile {
+        div {
+            h3 {
+                font-size: 25PX;
+            }
+        }
     }
     //  Titulo nav mobile pages 
-    .nav__mobile h2 {
-        font-size: 30px;
+    .nav__mobile {
+        h2 {
+            font-size: 30px;
+        }
     }
 }
 @media (min-width: $bpMedium) {

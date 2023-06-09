@@ -86,23 +86,28 @@
     // Título
     .pages-main__encabezado {
         display: grid;
+
+        h1 {
+            font-size: 40px;
+        }
     }
     #titulo-contacto {
         display: flex;
-    }
-    .pages-main__encabezado h1 {
-        font-size: 40px;
-    }
-    #titulo-contacto h1 {
-        font-size: 40px;
+
+        h1 {
+            font-size: 40px;
+        }
     }
 }
 @media (min-width: $bpLarge) {
-    .pages-main__encabezado h1 {
-        font-size: 60px;
-    }
-    .pages-main__encabezado img {
-        width: 150px;
-        height: 150px;
+    .pages-main__encabezado {
+        
+        h1 {
+            font-size: 60px;
+        }
+        img {
+            width: 150px;
+         height: 150px;
+        }
     }
 }

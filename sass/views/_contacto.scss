@@ -62,7 +62,7 @@
     }
 }
 /* Columna_02 */
-.contacto__section-02 {
+.contacto__horarios {
     display: flex;
     justify-content: start;
 
@@ -103,7 +103,7 @@
     }
 }
 /* Columna_03 */
-.contacto__section-03 {
+.contacto__ubicacion {
     display: flex;
     justify-content: start;
 
@@ -125,30 +125,33 @@
     }
     &::first-letter {
         font-size: large;
-    }    
+    } 
 }
 .iframe {
     width: 100%;
     height: auto;
     margin-top: 20px;
-}
+}   
 /* MEDIA QUERY */
 @media (min-width: $bpMedium) {
     // MAIN CONTACTO
     #titulo-contacto {
         display: flex;
-    }
-    #titulo-contacto h1 {
-        font-size: 40px;
+
+        h1 {
+            font-size: 40px;
+        }
     }
 }
 @media (min-width: $bpLarge) {
     // MAIN CONTACTO
-    #titulo-contacto h1 {
-        font-size: 60px;
-    }
-    #titulo-contacto img {
+    #titulo-contacto {        
+        h1 {
+            font-size: 60px;
+        }    
+        img {
         width: 150px;
         height: auto;
+        }
     }
 }
