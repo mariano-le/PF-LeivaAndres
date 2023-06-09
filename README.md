@@ -1,3 +1,5 @@
-# **Pre-Entrega N°2**
+# **Proyecto Final - Curso de Desarrollo Web**
+## Estudio Jurídico Leiva Real 
 
-Segunda pre-entrega para curso de Desarrollo Web. 
+Proyecto de final para curso de desarrollo web en Coderhouse. El sitio está destinado para una página web de un estudio jurídico especializado en distintas ramas. 
+Para el proyecto se utilizó HTML y CSS.  
